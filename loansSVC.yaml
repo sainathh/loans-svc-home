@@ -4,6 +4,7 @@ metadata:
   labels:
     name: loans-svc
   name: spring-controller
+  namespace: demo-dev
 spec:
   replicas: 1
   template:
@@ -25,6 +26,7 @@ metadata:
   labels:
     name: loans-svc
   name: loans-svc
+  namespace: demo-dev
 spec:
   type: NodePort
   ports:
@@ -40,6 +42,7 @@ metadata:
   labels:
     name: mongo
   name: mongo-controller
+  namespace: demo-dev
 spec:
   replicas: 1
   template:
@@ -69,6 +72,7 @@ metadata:
   labels:
     name: mongo
   name: mongo
+  namespace: demo-dev
 spec:
   type: ClusterIP
   ports:
